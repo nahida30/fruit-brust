@@ -35,101 +35,122 @@
       </style>
 </head>
 <body>
-    <header class="mx-5 md:px-16 lg:px-24 py-5 my-5 ">
-        <div class="navbar lg:flex lg:bg-nav-background rounded-full lg:text-white ">
+    <header class="mx-5 -mt-10 md:px-16 lg:px-24 py-5 lg:my-2 ">
+      <div class="navbar bg-base-100 lg:bg-nav-background rounded-full mt-10">
 
-            <div class="navbar-start">
-              <div class="dropdown">
+        <div class="navbar-start w-[100%] flex flex-row lg:flex-row-reverse lg:justify-center ">
 
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-10  z-[1]  shadow bg-base-100 rounded-box w-48">
-                  <li><a>Home</a></li>
-                  <li><a>About us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All fruits</a></li>
-                </ul>
-                <label tabindex="0" class="btn btn-ghost lg:hidden ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                  </label>
-              </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+            <div class="dropdown w-[100%] flex flex-row-reverse justify-between lg:justify-center">
+
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+
+                    </svg>
+
+                </label>
+
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2   rounded-box w-52 lg:text-white font-medium">
+
                     <li><a>Home</a></li>
-                    <li><a>About us</a></li>
+                    <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
-                    <li><a>All fruits</a></li>
+                    <li><a>All Fruits</a></li>
                 </ul>
-              </div>
+
+                <div class="flex items-center justify-center gap-23w">
+
+                    <img src="./images/logo.png" alt="">
+
+                    <h2 class="text-black lg:text-white text-3xl lg:text-4xl font-semibold">Fruit Burst</h2>
+
+                </div>
+
             </div>
 
-            <div class="nav-middle ">
-                <img src="images/logo.png" alt="" class="w-8">
-            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+            <div class="navbar-center hidden lg:flex">
+
+                <ul class="menu menu-horizontal px-1 lg:text-white font-medium">
+
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+
+                </ul>
+
             </div>
 
-            
-           
-            <div class="navbar-end invisible">
-              <input type="search" name="" id="" placeholder="search more" class=" lg:w-96 lg:h-7 lg:p-4 lg:rounded-full lg:text-black lg:visible lg:outline-none relative "> 
-              <i class="fa-solid fa-magnifying-glass absolute text-black mr-4 lg:visible"></i>
-            </div>
-          </div>
+        </div>
+
+        <div class="navbar-end hidden lg:flex mr-3">
+          <input type="search" name="" id="" placeholder="Search more.." class=" relative w-full py-3 rounded-full outline-none px-4 ">
+          <i class="fa-solid fa-magnifying-glass absolute text-black mr-4 "></i>
+        </div>
+
+    </div>
 
           <!-- hero section  -->
 
-          <div class="carousel w-full lg:my-5 ">
-            <div id="slide1" class="carousel-item relative w-full  ">
+          <div class="carousel w-full mt-3 lg:my-5 rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full  bg-gradient-to-r from-gray-700 to-gray-600">
                 
-              <img src="./images/banner1.png" alt="">
+              <img src="./images/banner1.png" alt="" class="w-full mix-blend-overlay">
             
              
               
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 
                 <a href="#slide4" class="btn btn-circle my-auto">❮</a>
-                <div class="lg:-mt-32 lg:text-7xl text-center text-xl lg:font-semibold text-white">
+                <div class="lg:-mt-32 lg:text-7xl text-center text-2xl font-semibold lg:font-semibold text-white">
                     <h1>Exotic tastes at your <br> doorstep</h1>
-                    <p class="text-sm lg:text-xl font-medium">We supply highly quality organic products</p>
-                    <button class="lg:text-xl lg:font-medium my-3 py-1 px-4 lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
+                    <p class="text-sm font-thin lg:text-xl lg:font-medium lg:mt-3 ">We supply highly quality organic products</p>
+                    <button class="py-1 px-1 text-base lg:text-xl lg:font-medium my-3  lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
                 </div> 
                 <a href="#slide2" class="btn btn-circle my-auto">❯</a>
               </div>
             </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="./images/banner2.png" class="w-full " />
+            <div id="slide2" class="carousel-item relative w-full bg-gradient-to-r from-gray-700 to-gray-600">
+              <img src="./images/banner2.png" class="w-full mix-blend-overlay" />
            
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle my-auto">❮</a>
-                <div class="lg:-mt-32 lg:text-7xl text-center text-xl lg:font-semibold text-white">
-                    <h1>Exotic tastes at your <br> doorstep</h1>
-                    <p class="text-sm lg:text-xl font-medium">We supply highly quality organic products</p>
-                    <button class="lg:text-xl lg:font-medium my-3 py-1 px-4 lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
-                </div> 
+                <div class="lg:-mt-32 lg:text-7xl text-center text-2xl font-semibold lg:font-semibold text-white">
+                  <h1>Exotic tastes at your <br> doorstep</h1>
+                  <p class="text-sm font-thin lg:text-xl lg:font-medium lg:mt-3 ">We supply highly quality organic products</p>
+                  <button class="py-1 px-1 text-base lg:text-xl lg:font-medium my-3  lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
+              </div>  
                 <a href="#slide3" class="btn btn-circle my-auto">❯</a>
                 
               </div>
             </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="./images/banner3.png" class="w-full" />
+            <div id="slide3" class="carousel-item relative w-full bg-gradient-to-r from-gray-700 to-gray-600">
+              <img src="./images/banner3.png"  class="w-full mix-blend-overlay" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle my-auto">❮</a>
-                <div class="lg:-mt-32 lg:text-7xl text-center text-xl lg:font-semibold text-white">
-                    <h1>Exotic tastes at your <br> doorstep</h1>
-                    <p class="text-sm lg:text-xl font-medium">We supply highly quality organic products</p>
-                    <button class="lg:text-xl lg:font-medium my-3 py-1 px-4 lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
-                </div> 
+                <div class="lg:-mt-32 lg:text-7xl text-center text-2xl font-semibold lg:font-semibold text-white">
+                  <h1>Exotic tastes at your <br> doorstep</h1>
+                  <p class="text-sm font-thin lg:text-xl lg:font-medium lg:mt-3 ">We supply highly quality organic products</p>
+                  <button class="py-1 px-1 text-base lg:text-xl lg:font-medium my-3  lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
+              </div> 
                 <a href="#slide4" class="btn btn-circle my-auto">❯</a>
                
               </div>
             </div> 
-            <div id="slide4" class="carousel-item relative w-full ">
-              <img src="./images/banner4.png" class="w-full" />
+            <div id="slide4" class="carousel-item relative w-full bg-gradient-to-r from-gray-700 to-gray-600 ">
+              <img src="./images/banner4.png"  class="w-full mix-blend-overlay"  />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle my-auto">❮</a>
-                <div class="lg:-mt-32 lg:text-7xl text-center text-xl lg:font-semibold text-white">
-                    <h1>Exotic tastes at your <br> doorstep</h1>
-                    <p class="text-sm lg:text-xl font-medium">We supply highly quality organic products</p>
-                    <button class="lg:text-xl lg:font-medium my-3 py-1 px-4 lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
-                </div> 
+                <div class="lg:-mt-32 lg:text-7xl text-center text-2xl font-semibold lg:font-semibold text-white">
+                  <h1>Exotic tastes at your <br> doorstep</h1>
+                  <p class="text-sm font-thin lg:text-xl lg:font-medium lg:mt-3 ">We supply highly quality organic products</p>
+                  <button class="py-1 px-1 text-base lg:text-xl lg:font-medium my-3  lg:py-3 lg:px-7 bg-nav-background rounded-lg">Shop Now</button>
+              </div> 
                 <a href="#slide1" class="btn btn-circle my-auto">❯</a>
                 
               </div>
@@ -159,6 +180,7 @@
             
             
           </div>
+          <!-- hero section ends  -->
 
     </header>
     <main class="mx-5 md:px-16 lg:px-24 py-5 my-5">
