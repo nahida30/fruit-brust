@@ -22,10 +22,7 @@
               colors: {
                 'nav-background': '#F85559',
                 border : 'rgba(18, 18, 18, 0.10)',
-                choose : 'rgba(18, 18, 18, 0.10)',
-
-              
-              
+                choose : 'rgba(18, 18, 18, 0.10)',              
             }
           }
         }
@@ -37,65 +34,48 @@
       </style>
 </head>
 <body>
-    <header class="mx-5 -mt-10 md:px-16 lg:px-24 py-5 lg:my-2 ">
-      <div class="navbar bg-base-100 lg:bg-nav-background rounded-full mt-10">
+  <!-- nav starts  -->
+  <header class="mx-5 md:px-16 lg:px-24 py-5 my-5 ">
+    <div class="navbar lg:flex lg:bg-nav-background rounded-full lg:text-white ">
 
-        <div class="navbar-start w-[100%] flex flex-row lg:flex-row-reverse lg:justify-center ">
+        <div class="navbar-start ">
+          <div class="dropdown">
 
-            <div class="dropdown w-[100%] flex flex-row-reverse justify-between lg:justify-center">
-
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-
-                    </svg>
-
-                </label>
-
-                <ul tabindex="0"
-                    class="menu bg-white menu-sm dropdown-content mt-3 z-[1] p-2   rounded-box w-52 lg:text-white font-medium">
-
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
-
-                <div class="flex items-center justify-center gap-23w">
-
-                    <img src="./images/logo.png" alt="">
-
-                    <h2 class="text-black lg:text-white text-3xl lg:text-4xl font-semibold">Fruit Burst</h2>
-
-                </div>
-
-            </div>
-
-            <div class="navbar-center hidden lg:flex">
-
-                <ul class="menu menu-horizontal px-1 lg:text-white font-medium">
-
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-
-                </ul>
-
-            </div>
-
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-10  z-[1]  shadow bg-base-100 rounded-box w-48">
+              <li><a>Home</a></li>
+              <li><a>About us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All fruits</a></li>
+            </ul>
+            <label tabindex="0" class="btn btn-ghost lg:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All fruits</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="navbar-end hidden lg:flex mr-3">
-          <input type="search" name="" id="" placeholder="Search more.." class=" relative w-full py-3 rounded-full outline-none px-4 ">
-          <i class="fa-solid fa-magnifying-glass absolute text-black mr-4 "></i>
+        <div class="nav-middle ">
+            <img src="images/logo.png" alt="" class="w-8">
+        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
         </div>
 
-    </div>
+
+
+        <div class="navbar-end invisible">
+          <input type="search" name="" id="" placeholder="search more" class=" lg:w-96 lg:h-7 lg:p-4 lg:rounded-full lg:text-black lg:visible lg:outline-none relative "> 
+          <i class="fa-solid fa-magnifying-glass absolute text-black mr-4 lg:visible"></i>
+        </div>
+      </div>
+
+      <!-- nav end  -->
+
 
           <!-- hero section  -->
 
@@ -218,7 +198,7 @@
             </div>
             <div>
               <h1 class="text-3xl lg:text-5xl font-bold">Deal of the day</h1>
-              <p class="py-6">Fruit is a natural and delicious gift from plants, often packed with essential nutrients and vitamins. They come in various colors, shapes, and flavors, offering a wide range of health benefits. Enjoying a variety of fruits is an excellent way to maintain a balanced and nutritious diet.</p>
+              <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
              
             </div>
           </div>
@@ -227,7 +207,7 @@
 
         <!-- fruit card starts  -->
         <section>
-          <div class="grid grid-cols-4 gap-3">
+          <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-3">
             <div class="card  bg-base-100 border-2 border-border">
               <figure><img src="./images/fruit1.png" class="mt-3" /></figure>
               <div class="card-body ">
@@ -241,11 +221,7 @@
                   <i class="fa-solid fa-star" style="color: #F85559; "></i>
                   <i class="fa-solid fa-star" style="color: #F85559;"></i>
                 </div>
-                <!-- <div class="card-actions justify-center">
-                 <a href="" class="text-[#F85559]">DETAILS</a>
-                </div> -->
-
-                <!-- The button to open modal -->
+             
                 <a href="#my_modal_8" class="btn text-[#F85559] ">DETAILS</a>
                 <div class="modal" id="my_modal_8">
                    <div class="modal-box">
@@ -260,17 +236,134 @@
                     <i class="fa-solid fa-star" style="color: #F85559;"></i>
                   </div>
                    <div class="modal-action flex justify-center">
-                   <a href="#" class="btn">Yay!</a>
-                   <a href="#" class="btn">Yay!</a>
+                    <a href="#" class="btn border-[#F85559] text-[#F85559] bg-white">Close</a>
+                    <a href="#" class="btn bg-[#F85559] text-white">Buy Now</a>
+                   
               </div>
            </div>
           </div>
             
             </div>
-          
-          
+            </div>
+            <!-- 2nd card  -->
+            <div class="card  bg-base-100 border-2 border-border">
+              <figure><img src="./images/fruit2.png" class="mt-3" /></figure>
+              <div class="card-body ">
+                <h2 class="card-title mx-auto">12.90$ - 18.85$</h2>
+                <hr>
+                <p class="mx-auto">Orange</p>
+                <div class="rating mx-auto flex gap-2">
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559; "></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                </div>
+             
+                <a href="#my_modal_8" class="btn text-[#F85559] ">DETAILS</a>
+                <div class="modal" id="my_modal_8">
+                   <div class="modal-box">
+                   <img src="./images/fruit2.png" alt="" class="mx-auto">
+                   <p class="py-4 text-center text-xl font-semibold">Orage</p>
+                   <p class="text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                   <div class="rating  flex justify-center mt-4 gap-2 ">
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559; "></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  </div>
+                   <div class="modal-action flex justify-center">
+                    <a href="#" class="btn border-[#F85559] text-[#F85559] bg-white">Close</a>
+                    <a href="#" class="btn bg-[#F85559] text-white">Buy Now</a>
+                   
+              </div>
+           </div>
+          </div>
+            
+            </div>
+            </div>
+
+            <!-- 3rd card  -->
+            <div class="card  bg-base-100 border-2 border-border">
+              <figure><img src="./images/fruit3.png" class="mt-3" /></figure>
+              <div class="card-body ">
+                <h2 class="card-title mx-auto">12.90$ - 18.85$</h2>
+                <hr>
+                <p class="mx-auto">Mango</p>
+                <div class="rating mx-auto flex gap-2">
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559; "></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                </div>
+             
+                <a href="#my_modal_8" class="btn text-[#F85559] ">DETAILS</a>
+                <div class="modal" id="my_modal_8">
+                   <div class="modal-box">
+                   <img src="./images/fruit3.png" alt="" class="mx-auto">
+                   <p class="py-4 text-center text-xl font-semibold">Mango</p>
+                   <p class="text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                   <div class="rating  flex justify-center mt-4 gap-2 ">
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559; "></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  </div>
+                   <div class="modal-action flex justify-center">
+                    <a href="#" class="btn border-[#F85559] text-[#F85559] bg-white">Close</a>
+                    <a href="#" class="btn bg-[#F85559] text-white">Buy Now</a>
+                   
+              </div>
+           </div>
+          </div>
+            
+            </div>
+            </div>
+
+            <!-- 4th card  -->
+            <div class="card  bg-base-100 border-2 border-border">
+              <figure><img src="./images/fruit4.png" class="mt-3" /></figure>
+              <div class="card-body ">
+                <h2 class="card-title mx-auto">12.90$ - 18.85$</h2>
+                <hr>
+                <p class="mx-auto">Strawberry</p>
+                <div class="rating mx-auto flex gap-2">
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  <i class="fa-solid fa-star" style="color: #F85559; "></i>
+                  <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                </div>
+             
+                <a href="#my_modal_8" class="btn text-[#F85559] ">DETAILS</a>
+                <div class="modal" id="my_modal_8">
+                   <div class="modal-box">
+                   <img src="./images/fruit4.png" alt="" class="mx-auto">
+                   <p class="py-4 text-center text-xl font-semibold">Strawberry</p>
+                   <p class="text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                   <div class="rating  flex justify-center mt-4 gap-2 ">
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                    <i class="fa-solid fa-star" style="color: #F85559; "></i>
+                    <i class="fa-solid fa-star" style="color: #F85559;"></i>
+                  </div>
+                   <div class="modal-action flex justify-center">
+                    <a href="#" class="btn border-[#F85559] text-[#F85559] bg-white">Close</a>
+                    <a href="#" class="btn bg-[#F85559] text-white">Buy Now</a>
+                   
+              </div>
+           </div>
+          </div>
+            
+            </div>
+            </div>
+            </div>
+     
         </section>
-      
       
       <!-- fruit section ends  -->
 
@@ -281,7 +374,7 @@
             <div class="hero-content text-center text-neutral-content">
                 <div class="">
                     <h1 class="mb-5 text-5xl font-bold">Meet Our Team </h1>
-                    <p class="mb-5 text-xl font-medium ">Collaborative group working together, leveraging strengths to achieve common goals, fostering unity, and supporting one another.</p>
+                    <p class="mb-5 text-xl font-medium ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mt-20">
                         <div class="card ">
                           <img src="./images/member1.png" class="w-36 mx-auto" />
@@ -343,8 +436,8 @@
       <section >
         <div class="mt-10">
           <div class="text-center lg:mx-auto">
-            <h3 class="text-5xl font-extrabold">Why Choose Us</h3>
-            <p class="text-base font-medium mt-4">Trusted expertise, exceptional service, innovative solutions. Choose us for reliability, quality, and a rewarding partnership.</p>
+            <h3 class="text-5xl lg:font-extrabold">Why Choose Us</h3>
+            <p class="text-base font-medium mt-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <div class="flex flex-col lg:flex-row gap-4 items-center pt-14">
 
@@ -366,7 +459,7 @@
               </div>
               <div class="flex flex-col lg:flex-row mx-14 lg:mx-auto md:mx-44 gap-2 items-center">
                 <div class="bg-choose rounded-full">
-                  <p><i class="fa-solid fa-heart bg-base-600 text-black text-2xl p-2"></i></p>
+                  <p><i class="fa-solid fa-users bg-base-600 text-black text-2xl p-2"></i></p>
                 </div>
                 <div class="text-center lg:text-left">
                   <h1 class="text-3xl font-bold">Fresh is Best</h1>
@@ -376,10 +469,7 @@
               </div>
               <div class="flex flex-col lg:flex-row mx-14 lg:mx-auto md:mx-44 gap-2 items-center">
                 <div class="bg-choose rounded-full">
-                  <p>
-                    <i class="fa-solid fa-heart bg-base-600 text-black text-2xl p-2"></i>
-                  
-                  </p>
+                  <p><i class="fa-solid fa-users bg-base-600 text-black text-2xl p-2"></i></p>
                 </div>
                 <div class="text-center lg:text-left">
                   <h1 class="text-3xl font-bold">Gift Certificates</h1>
@@ -401,7 +491,7 @@
                 <div class="space-y-12 text-right lg:-mt-10">
                   <div class="flex flex-col lg:flex-row-reverse mx-14 lg:mx-auto md:mx-44 gap-2 items-center">
                       <div class="bg-choose rounded-full">
-                          <p><i class="fa-solid fa-crown bg-base-600 text-black text-2xl p-2"></i></p>
+                        <p><i class="fa-solid fa-users bg-base-600 text-black text-2xl p-2"></i></p>
                       </div>
 
                       <div class="text-center lg:text-right">
@@ -412,8 +502,19 @@
                       </div>
                   </div>
                   <div class="flex flex-col lg:flex-row-reverse mx-14 lg:mx-auto md:mx-44 gap-2 items-center">
+                    <div class="bg-choose rounded-full">
+                      <p><i class="fa-solid fa-users bg-base-600 text-black text-2xl p-2"></i></p>
+                    </div>
+                    <div class="text-center lg:text-right">
+                      <h1 class="text-3xl font-bold">Sustainable Practice</h1>
+                      <hr>
+                      <p class="text-lg font-medium">Preserving tomorrow's world today: embracing sustainable
+                          practice for a greener and brighter future ahead.</p>
+                  </div>
+                </div>
+                  <div class="flex flex-col lg:flex-row-reverse mx-14 lg:mx-auto md:mx-44 gap-2 items-center">
                       <div class="bg-choose rounded-full">
-                          <p><i class="fa-regular fa-thumbs-up bg-base-600 text-black text-2xl p-2"></i></p>
+                        <p><i class="fa-solid fa-users bg-base-600 text-black text-2xl p-2"></i></p>
                       </div>
                       <div class="text-center lg:text-right">
                           <h1 class="text-3xl font-bold">The Benefits Only</h1>
@@ -422,17 +523,7 @@
                               benefits that set us apart from the rest.</p>
                       </div>
                   </div>
-                  <div class="flex flex-col lg:flex-row-reverse mx-14 lg:mx-auto md:mx-44 gap-2 items-center">
-                      <div class="bg-choose rounded-full">
-                          <i class="fa-solid fa-ice-cream  bg-base-600 text-black text-2xl p-2 "></i>
-                      </div>
-                      <div class="text-center lg:text-right">
-                          <h1 class="text-3xl font-bold">Sustainable Practice</h1>
-                          <hr>
-                          <p class="text-lg font-medium">Preserving tomorrow's world today: embracing sustainable
-                              practice for a greener and brighter future ahead.</p>
-                      </div>
-                  </div>
+                 
 
               </div>
           </div>
@@ -442,6 +533,7 @@
       <!-- choose us section ends  -->
 
     </main>
+    <!-- footer section starts  -->
     <footer class="footer footer-center p-10 bg-black text-white">
       <div>
         <div class="flex gap-2">
@@ -469,6 +561,7 @@
         
       </div>
     </footer>
+    <!-- footer section ends  -->
     
 </body>
 </html>
