@@ -21,7 +21,8 @@
             extend: {
               colors: {
                 'nav-background': '#F85559',
-                'img-background' : 'linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)',
+                border : 'rgba(18, 18, 18, 0.10)',
+
               
               
             }
@@ -186,42 +187,225 @@
     <main class="mx-5 md:px-16 lg:px-24 py-5 my-5">
       <!-- deal section starts  -->
       <section>
-        <div class="hero  bg-base-200">
-          <div class="hero-content flex-col-reverse flex-col lg:flex-row-reverse">
+        <div class="hero ">
+          <div class="hero-content flex-col-reverse lg:gap-96 lg:flex-row-reverse">
             <div class="flex gap-5">
               <div>
                 <span class="countdown font-mono text-4xl">
-                  <span style="--value:15;"></span> :
+                  <span style="--value:15;" class="font-extrabold"></span> :
                 </span>
                 days
               </div> 
               <div>
                 <span class="countdown font-mono text-4xl">
-                  <span style="--value:10;"></span>:
+                  <span style="--value:10;" class="font-extrabold"></span>:
                 </span>
                 hours
               </div> 
               <div>
                 <span class="countdown font-mono text-4xl">
-                  <span style="--value:24;"></span>:
+                  <span style="--value:24;" class="font-extrabold"></span>:
                 </span>
                 min
               </div> 
               <div>
                 <span class="countdown font-mono text-4xl">
-                  <span style="--value:37;"></span>
+                  <span style="--value:37;" class="font-extrabold"></span>
                 </span>
                 sec
               </div>
             </div>
             <div>
               <h1 class="text-5xl font-bold">Deal of the day</h1>
-              <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
              
             </div>
           </div>
         </div>
+
+        <!-- fruit card starts  -->
+       <section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="card  bg-base-100 border-2 border-border bg-white flex items-center mt-10">
+            <figure><img src="./images/fruit4.png" class="mt-5" /></figure>
+            <div class="card-body text-center">
+                <h2 class="card-title text-center">12.90$ - 18.85$</h2>
+                <hr>
+                <p>Strawberry</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                </div>
+  
+                <label for="my_modal_11" class="btn bg-white text-[#F85559] border-0">Details</label>
+  
+  
+                <input type="checkbox" id="my_modal_11" class="modal-toggle" />
+                <div class="modal">
+                    <div class="modal-box space-y-5">
+                        <div class="card  bg-base-100 flex items-center ">
+                            <figure><img src="./images/fruit1.png" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title flex items-center justify-center text-2xl font-extrabold">
+                                  Strawberry</h2>
+                                <p class="font-bold">Fresh & Nautural Grapes Are Collected From Farmers</p>
+                                <p class="text-xl"><i class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559; "></i><i
+                                        class="fa-solid fa-star" style="color: #e7b79f;"></i></p>
+                                <div class="card-actions justify-center ">
+                                    <button class="btn text-[#F85559] border-[#F85559] ">Close</button>
+                                    <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_11">Close</label>
+                </div>
+            </div>
+        </div>
+      
+          <div class="card  bg-base-100 border-2 border-border bg-white flex items-center mt-10">
+            <figure><img src="./images/fruit4.png" class="mt-5" /></figure>
+            <div class="card-body text-center">
+                <h2 class="card-title text-center">12.90$ - 18.85$</h2>
+                <hr>
+                <p>Strawberry</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                </div>
+  
+                <label for="my_modal_11" class="btn bg-white text-[#F85559] border-0">Details</label>
+  
+  
+                <input type="checkbox" id="my_modal_11" class="modal-toggle" />
+                <div class="modal">
+                    <div class="modal-box space-y-5">
+                        <div class="card  bg-base-100 flex items-center ">
+                            <figure><img src="./images/fruit1.png" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title flex items-center justify-center text-2xl font-extrabold">
+                                  Strawberry</h2>
+                                <p class="font-bold">Fresh & Nautural Grapes Are Collected From Farmers</p>
+                                <p class="text-xl"><i class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559; "></i><i
+                                        class="fa-solid fa-star" style="color: #e7b79f;"></i></p>
+                                <div class="card-actions justify-center ">
+                                    <button class="btn text-[#F85559] border-[#F85559] ">Close</button>
+                                    <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_11">Close</label>
+                </div>
+            </div>
+        </div>
+      
+          <div class="card  bg-base-100 border-2 border-border bg-white flex items-center mt-10">
+            <figure><img src="./images/fruit4.png" class="mt-5" /></figure>
+            <div class="card-body text-center">
+                <h2 class="card-title text-center">12.90$ - 18.85$</h2>
+                <hr>
+                <p>Strawberry</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                </div>
+  
+                <label for="my_modal_11" class="btn bg-white text-[#F85559] border-0">Details</label>
+  
+  
+                <input type="checkbox" id="my_modal_11" class="modal-toggle" />
+                <div class="modal">
+                    <div class="modal-box space-y-5">
+                        <div class="card  bg-base-100 flex items-center ">
+                            <figure><img src="./images/fruit1.png" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title flex items-center justify-center text-2xl font-extrabold">
+                                  Strawberry</h2>
+                                <p class="font-bold">Fresh & Nautural Grapes Are Collected From Farmers</p>
+                                <p class="text-xl"><i class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559; "></i><i
+                                        class="fa-solid fa-star" style="color: #e7b79f;"></i></p>
+                                <div class="card-actions justify-center ">
+                                    <button class="btn text-[#F85559] border-[#F85559] ">Close</button>
+                                    <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_11">Close</label>
+                </div>
+            </div>
+        </div>
+      
+          <div class="card  bg-base-100 border-2 border-border bg-white flex items-center mt-10">
+            <figure><img src="./images/fruit4.png" class="mt-5" /></figure>
+            <div class="card-body text-center">
+                <h2 class="card-title text-center">12.90$ - 18.85$</h2>
+                <hr>
+                <p>Strawberry</p>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                </div>
+  
+                <label for="my_modal_11" class="btn bg-white text-[#F85559] border-0">Details</label>
+  
+  
+                <input type="checkbox" id="my_modal_11" class="modal-toggle" />
+                <div class="modal">
+                    <div class="modal-box space-y-5">
+                        <div class="card  bg-base-100 flex items-center ">
+                            <figure><img src="./images/fruit1.png" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title flex items-center justify-center text-2xl font-extrabold">
+                                  Strawberry</h2>
+                                <p class="font-bold">Fresh & Nautural Grapes Are Collected From Farmers</p>
+                                <p class="text-xl"><i class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559;"></i><i
+                                        class="fa-solid fa-star" style="color: #F85559; "></i><i
+                                        class="fa-solid fa-star" style="color: #e7b79f;"></i></p>
+                                <div class="card-actions justify-center ">
+                                    <button class="btn text-[#F85559] border-[#F85559] ">Close</button>
+                                    <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="modal-backdrop" for="my_modal_11">Close</label>
+                </div>
+                
+            </div>
+        </div>
+      
+        </div>
+        <div class="flex justify-center items-center mt-8">
+          <button type="submit" class="btn text-white bg-[#F85559] ">Shop All</button>
+        </div>
       </section>
+
+
 
     </main>
     <footer>
