@@ -36,23 +36,30 @@
 <body>
   <!-- nav starts  -->
   <header class="mx-5 md:px-16 lg:px-24 py-5 my-5 ">
-    <div class="navbar lg:flex lg:bg-nav-background rounded-full lg:text-white ">
+    <div class="navbar  lg:bg-nav-background rounded-full lg:text-white ">
 
-        <div class="navbar-start ">
-          <div class="dropdown">
+        <div class="navbar-start w-[100%] flex flex-row lg:flex-row-reverse lg:justify-center ">
+          <div class="dropdown w-[100%] flex flex-row-reverse justify-between lg:justify-center">
+            <label tabindex="0" class="btn btn-ghost lg:hidden ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
 
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-10  z-[1]  shadow bg-base-100 rounded-box w-48">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-2  z-[1]  shadow bg-base-100 rounded-box w-52 text-2xl">
               <li><a>Home</a></li>
               <li><a>About us</a></li>
               <li><a>Shop</a></li>
               <li><a>All fruits</a></li>
             </ul>
-            <label tabindex="0" class="btn btn-ghost lg:hidden ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-              </label>
+           <div class="flex gap-2 ">
+              <img src="./images/logo.png" alt="">
+            
+              <h2 class="font-semibold text-2xl uppercase mt-4">fruit brust</h2>
+            
+           </div>
+          
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+          <div class="navbar-center hidden lg:flex ">
+            <ul class="menu menu-horizontal px-1 text-xl">
                 <li><a>Home</a></li>
                 <li><a>About us</a></li>
                 <li><a>Shop</a></li>
@@ -61,16 +68,9 @@
           </div>
         </div>
 
-        <div class="nav-middle ">
-            <img src="images/logo.png" alt="" class="w-8">
-        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
-        </div>
-
-
-
-        <div class="navbar-end invisible">
-          <input type="search" name="" id="" placeholder="search more" class=" lg:w-96 lg:h-7 lg:p-4 lg:rounded-full lg:text-black lg:visible lg:outline-none relative "> 
-          <i class="fa-solid fa-magnifying-glass absolute text-black mr-4 lg:visible"></i>
+        <div class="navbar-end hidden lg:flex">
+          <input type="search" name="" id="" placeholder="search more" class=" lg:w-96 lg:h-11 lg:mr-3 lg:p-4 lg:rounded-full lg:text-black lg:visible lg:outline-none relative "> 
+          <i class="fa-solid fa-magnifying-glass absolute text-black mr-6 lg:visible"></i>
         </div>
       </div>
 
